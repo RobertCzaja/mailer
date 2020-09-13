@@ -1,0 +1,36 @@
+{
+  "name": "morele/task",
+  "description": "Recruitment morele.net task",
+  "type": "project",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Maja Chlodnicka",
+      "email": "maja.chlodnicka@morele.net"
+    }
+  ],
+  "require": {
+    "symfony/event-dispatcher": "4.4.*",
+    "symfony/flex": "1.*",
+    "symfony/framework-bundle": "4.4.*",
+    "symfony/console": "4.4.*",
+    "symfony/dotenv": "4.4.*",
+    "symfony/yaml": "4.4.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/",
+      "App\\Test\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-master",
+    "phpunit/phpunit": "^7.1"
+  },
+  "scripts": {
+    "auto-scripts": {
+      "cache:clear": "symfony-cmd",
+      "assets:install %PUBLIC_DIR%": "symfony-cmd"
+    }
+  }
+}
